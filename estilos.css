@@ -114,9 +114,11 @@ h2::after {
 
 .nav-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem 5%;
+    height: var(--nav-height);
+    width: 100%;
 }
 
 .logo {
@@ -124,7 +126,7 @@ h2::after {
     font-weight: 700;
     font-size: 1.8rem;
     letter-spacing: 2px;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     text-transform: uppercase;
     color: var(--text-main);
 }
@@ -134,11 +136,45 @@ h2::after {
 }
 
 .nav-links {
+    position: fixed;
+    right: -100%;
+    top: var(--nav-height);
+    height: calc(100vh - var(--nav-height));
+    background-color: rgba(26, 36, 47, 0.98);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    transition: transform 0.4s ease-in-out;
+    padding-top: 3rem;
+    gap: 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    border-left: 1px solid rgba(255, 183, 3, 0.1);
 }
+
+.nav-links.nav-active {
+    transform: translateX(-100%);
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-main);
+    margin: 5px;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.toggle .line1 { transform: rotate(-45deg) translate(-5px, 6px); background-color: var(--accent); }
+.toggle .line2 { opacity: 0; }
+.toggle .line3 { transform: rotate(45deg) translate(-5px, -6px); background-color: var(--accent); }
 
 .nav-links a {
     font-weight: 500;
@@ -609,14 +645,25 @@ h2::after {
 /* ============================================================================ */
 @media screen and (min-width: 768px) {
     .nav-container {
-        flex-direction: row;
-        justify-content: space-between;
         padding: 0 2rem;
-        height: var(--nav-height);
     }
     
-    .logo {
-        margin-bottom: 0;
+    .hamburger {
+        display: none;
+    }
+
+    .nav-links {
+        position: static;
+        flex-direction: row;
+        height: auto;
+        background-color: transparent;
+        padding-top: 0;
+        width: auto;
+        transform: none;
+        backdrop-filter: none;
+        box-shadow: none;
+        border-left: none;
+        gap: 1.5rem;
     }
 
     .hero h1 {
