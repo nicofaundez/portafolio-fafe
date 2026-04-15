@@ -137,7 +137,8 @@ h2::after {
 
 .nav-links {
     position: fixed;
-    right: -100%;
+    right: 0;
+    transform: translateX(100%);
     top: var(--nav-height);
     height: calc(100vh - var(--nav-height));
     background-color: rgba(26, 36, 47, 0.98);
@@ -154,7 +155,7 @@ h2::after {
 }
 
 .nav-links.nav-active {
-    transform: translateX(-100%);
+    transform: translateX(0);
 }
 
 .hamburger {
