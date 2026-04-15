@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup & Gallery | FAFE DJ & Producer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="subpage">
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo"><a href="index.html">FA<span>FE</span></a></div>
+            <nav aria-label="Navegación Principal">
+                <ul class="nav-links">
+                    <li><a href="sobre-mi.html" target="_blank">Sobre Mí</a></li>
+                    <li><a href="fechas.html">Fechas</a></li>
+                    <li><a href="gigs.html">Gigs</a></li>
+                    <li><a href="musica.html">Música</a></li>
+                    <li><a href="setup.html" class="active">Setup</a></li>
+                    <li><a href="index.html#booking">Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="setup" class="bio-setup container section-padding">
+            <div class="bio-gallery-section" style="grid-column: 1 / -1; margin-bottom: 4rem;">
+                <h2>Galería</h2>
+                <div class="bio-gallery">
+                    <img src="IMAGES/IMG_1299.jpeg" alt="FAFE Retrato DJ" class="bio-img">
+                    <img src="IMAGES/IMG_6550.jpeg" alt="FAFE en acción" class="bio-img">
+                    <img src="IMAGES/870ECD19-404E-4511-AD14-F26BDAAF05E7.jpg" alt="FAFE Live" class="bio-img">
+                    <img src="IMAGES/3953CCEC-153C-4C09-AE6D-9A0C8ED17636.jpg" alt="FAFE Live Detail" class="bio-img">
+                    <img src="IMAGES/500DA067-42AE-4CA3-BB6D-FF5CBD4466AA.jpg" alt="FAFE Mix" class="bio-img">
+                    <img src="IMAGES/80C37A0C-9D6B-434A-A95D-0479FDCA681E.jpg" alt="FAFE Crowd" class="bio-img">
+                    <img src="IMAGES/d783496c-ddf5-4c6f-aa1e-b7245439a332.jpg" alt="FAFE Event" class="bio-img">
+                    <img src="IMAGES/ed1d76d7-c8a4-4bf3-98c5-56ff0c3e5234.jpg" alt="FAFE Atmosphere" class="bio-img">
+                </div>
+            </div>
+            
+            <div class="setup-content" style="grid-column: 1 / -1;">
+                <h2>Technical Rider</h2>
+                <ul class="rider-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <li>
+                        <img src="IMAGES/cdj_3000.png" alt="Pioneer CDJ-3000" class="rider-img">
+                        <span>3x Pioneer CDJ-3000</span>
+                    </li>
+                    <li>
+                        <img src="IMAGES/xone_96.png" alt="Allen & Heath Xone:96" class="rider-img">
+                        <span>1x Mezcladora Allen & Heath Xone:96</span>
+                    </li>
+                    <li>
+                        <img src="IMAGES/ableton_push2.png" alt="Ableton Push 2" class="rider-img">
+                        <span>1x Ableton Push 2 (Para Live Act)</span>
+                    </li>
+                    <li>
+                        <img src="IMAGES/monitors.png" alt="Monitores de cabina" class="rider-img">
+                        <span>2x Monitores de cabina profesionales</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="back-home" style="grid-column: 1 / -1; margin-top: 4rem; text-align: center;">
+                <a href="index.html" class="btn-cta">Volver al Inicio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="booking" class="site-footer">
+        <div class="container footer-content">
+            <div class="contact-form-wrapper">
+                <h2>Booking & Contacto</h2>
+                <form class="contact-form">
+                    <label for="name" class="visually-hidden">Tu Nombre / Promotor</label>
+                    <input type="text" id="name" placeholder="Tu Nombre / Promotor" required>
+                    <label for="email" class="visually-hidden">Tu Correo Electrónico</label>
+                    <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+                    <label for="details" class="visually-hidden">Detalles del evento</label>
+                    <textarea id="details" placeholder="Fechas, Locación, Tipo de set requerido..." rows="4" required></textarea>
+                    <button type="submit" class="btn-cta">Enviar Mensaje</button>
+                </form>
+            </div>
+            <div class="social-links">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://soundcloud.com/fafe_1" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Resident Advisor</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FAFE. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

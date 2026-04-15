@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música | FAFE DJ & Producer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="subpage">
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo"><a href="index.html">FA<span>FE</span></a></div>
+            <nav aria-label="Navegación Principal">
+                <ul class="nav-links">
+                    <li><a href="sobre-mi.html" target="_blank">Sobre Mí</a></li>
+                    <li><a href="fechas.html">Fechas</a></li>
+                    <li><a href="gigs.html">Gigs</a></li>
+                    <li><a href="musica.html" class="active">Música</a></li>
+                    <li><a href="setup.html">Setup</a></li>
+                    <li><a href="index.html#booking">Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="musica" class="musica container section-padding">
+            <h2>Música</h2>
+            <div class="music-grid single-item">
+                <article class="music-card" id="track-1">
+                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/fafe_1&color=%23ffb703&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                </article>
+            </div>
+            <div class="back-home" style="margin-top: 3rem; text-align: center;">
+                <a href="index.html" class="btn-cta">Volver al Inicio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="booking" class="site-footer">
+        <div class="container footer-content">
+            <div class="contact-form-wrapper">
+                <h2>Booking & Contacto</h2>
+                <form class="contact-form">
+                    <label for="name" class="visually-hidden">Tu Nombre / Promotor</label>
+                    <input type="text" id="name" placeholder="Tu Nombre / Promotor" required>
+                    <label for="email" class="visually-hidden">Tu Correo Electrónico</label>
+                    <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+                    <label for="details" class="visually-hidden">Detalles del evento</label>
+                    <textarea id="details" placeholder="Fechas, Locación, Tipo de set requerido..." rows="4" required></textarea>
+                    <button type="submit" class="btn-cta">Enviar Mensaje</button>
+                </form>
+            </div>
+            <div class="social-links">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://soundcloud.com/fafe_1" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Resident Advisor</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FAFE. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

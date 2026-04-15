@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAFE | DJ & Producer | Techno & Hardgroove</title>
+    
+    <!-- SEO Best Practices -->
+    <meta name="description" content="Portafolio oficial y Landing Page para DJ y Productor de música electrónica especializada en Techno y Hardgroove. Escucha los últimos mixes y reserva fechas de tour.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">FA<span>FE</span></div>
+            <nav aria-label="Navegación Principal">
+                <ul class="nav-links">
+                    <li><a href="sobre-mi.html" target="_blank">Sobre Mí</a></li>
+                    <li><a href="fechas.html">Fechas</a></li>
+                    <li><a href="gigs.html">Gigs</a></li>
+                    <li><a href="musica.html">Música</a></li>
+                    <li><a href="setup.html">Setup</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Landing page is now just the Hero Section -->
+        <section id="hero" class="hero" style="background-image: url('IMAGES/DSC_9981.jpeg');">
+            <div class="hero-content container">
+                <h1>FAFE</h1>
+                <p class="subtitle">DJ Set & Live Act</p>
+                <div class="hero-actions">
+                    <a href="#booking" class="btn-cta">Booking / Contacto</a>
+                    <div class="hero-socials">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Ig.</a>
+                        <a href="https://soundcloud.com/fafe_1" target="_blank" rel="noopener noreferrer">Sc.</a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">Yt.</a>
+                        <a href="https://ra.co" target="_blank" rel="noopener noreferrer">Ra.</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="booking" class="site-footer">
+        <div class="container footer-content">
+            <div class="contact-form-wrapper">
+                <h2>Booking & Contacto</h2>
+                <form class="contact-form">
+                    <label for="name" class="visually-hidden">Tu Nombre / Promotor</label>
+                    <input type="text" id="name" placeholder="Tu Nombre / Promotor" required>
+                    
+                    <label for="email" class="visually-hidden">Tu Correo Electrónico</label>
+                    <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+                    
+                    <label for="details" class="visually-hidden">Detalles del evento</label>
+                    <textarea id="details" placeholder="Fechas, Locación, Tipo de set requerido..." rows="4" required></textarea>
+                    
+                    <button type="submit" class="btn-cta">Enviar Mensaje</button>
+                </form>
+            </div>
+            <div class="social-links">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://soundcloud.com/fafe_1" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Resident Advisor</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FAFE. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
